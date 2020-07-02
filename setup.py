@@ -1,8 +1,12 @@
 #!/usr/bin/env python
 
 """The setup script."""
-
+import pathlib
 from setuptools import setup, find_packages
+
+_here = pathlib.Path(__file__).parent
+
+version = (_here / "VERSION").read_text()
 
 with open('README.rst') as readme_file:
     readme = readme_file.read()
@@ -48,6 +52,6 @@ setup(
     test_suite='tests',
     tests_require=test_requirements,
     url='https://github.com/ahmedsalhin/hfunctions',
-    version='0.1.0',
+    version=version,
     zip_safe=False,
 )
