@@ -5,7 +5,7 @@ __all__ = ["create_sample_df", "random_actual_prediction"]
 
 
 def create_sample_df():
-    df = pd.read_csv('../data/sample_df.csv')
+    df = pd.read_csv('hfunctions/data/sample_df.csv')
     return df
 
 
